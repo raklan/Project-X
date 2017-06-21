@@ -8,7 +8,8 @@ Riddles Ideas
 Cyphers to use:
 	Ceasar
 	Morse?
-	A=1, B=2, etc. & Variations
+	A=1, B=2, etc. & Variationsz
+		with key
 	Grid System
 	Symbol to Letter?
 	Put something inside the source code
