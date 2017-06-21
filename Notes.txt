@@ -4,25 +4,40 @@ Riddles Ideas
 		-For example, cyphers all spell out "This is the Answer", but the true phrase will be "What is nether" 
 		(THis IS THE ANsWER - Capital letters are ones I used)
 
+	"The fear of the unknown brought you here"
+
 
 Cyphers to use:
-	Ceasar
-	Morse?
-	A=1, B=2, etc. & Variationsz
+	-Ceasar
+	-Morse?
+	-A=1, B=2, etc. & Variations
 		with key
-	Grid System
-	Symbol to Letter?
-	Put something inside the source code
+	Grid System - Inisde the README (Figure out a key)
+	-Symbol to Letter?
 	Scavenger hunt
 		-For example, movie/game quotes are the answer
-	Transposition
+	-Transposition
 	Military? (Alpha Bravo Charlie etc)
 	Math?
 	Riddle
-	Scramble
+	-Scramble
 	
 	
+	Each one makes sense except for one letter out of place, either R, E, A, D, M,  or E
+
 
 Other Ideas
 	Obfuscation during the beginning of letter/number display, solely visual
+	Computer generate+solve its own riddles (Ceasar and transposition)
 
+Jobs
+	Sean: 
+		Delta (D)
+		Alpha (A)
+	Ryan:
+		Romeo (R)
+		Mike (M)
+		Grid System in the README
+	Jake:
+		Echo (E) x2
+		
