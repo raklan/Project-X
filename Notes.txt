@@ -1,5 +1,27 @@
 Riddles Ideas
 
+	Phrase(To be called password for ease of use in notes) hidden in cyphers, true phrase hidden in Password
+		-For example, cyphers all spell out "This is the Answer", but the true phrase will be "What is nether" 
+		(THis IS THE ANsWER - Capital letters are ones I used)
+
 
 Cyphers to use:
-Morse?
+	Ceasar
+	Morse?
+	A=1, B=2, etc. & Variations
+	Grid System
+	Symbol to Letter?
+	Put something inside the source code
+	Scavenger hunt
+		-For example, movie/game quotes are the answer
+	Transposition
+	Military? (Alpha Bravo Charlie etc)
+	Math?
+	Riddle
+	Scramble
+	
+	
+
+Other Ideas
+	Obfuscation during the beginning of letter/number display, solely visual
+
