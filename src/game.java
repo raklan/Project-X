@@ -50,12 +50,17 @@ public class game {
 
         }
 
+        riddleOne();
+
     }
 
     public static void riddleOne(){
 
         System.out.println(one.getDesc());
-
+        System.out.println();
+        System.out.println("Press Enter To Continue");
+        String ok = scan.nextLine();
+        System.out.println();
     }
     public static void riddleTwo(){
 
