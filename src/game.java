@@ -6,15 +6,83 @@ import java.util.*;
  */
 public class game {
 
+    static riddle one = new riddle("ar","r", 1, ". .  . . .     _  _ _ _     . _ _ _  . . _  . _ . .  . .  .  _  _");
+
+    static riddle two = new riddle("e1", "e", 2, "Put the actual Riddle itself here");
+
+    static riddle three = new riddle("ay", "a", 3, "");
+
+    static riddle four = new riddle("dee", "d", 4, "");
+
+    static riddle five = new riddle("em", "m", 5, "");
+
+    static riddle six = new riddle("e2", "e", 6, "");
+
+
+    static Random gen = new Random();
+
+    static Scanner scan = new Scanner(System.in);
+
     public static void main(String[]args){
 
-        riddle one = new riddle("ar","r", 1);
-        riddle two = new riddle("e1", "e", 2);
-        riddle three = new riddle("ay", "a", 3);
-        riddle four = new riddle("dee", "d", 4);
-        riddle five = new riddle("em", "m", 5);
-        riddle six = new riddle("e2", "e", 6);
+        int next = gen.nextInt(6);
+
+        switch(next){
+
+            case 0:
+                riddleOne();
+                break;
+            case 1:
+                riddleTwo();
+                break;
+            case 2:
+                riddleThree();
+                break;
+            case 3:
+                riddleFour();
+                break;
+            case 4:
+                riddleFive();
+                break;
+            case 5:
+                riddleSix();
+                break;
+
+        }
 
     }
+
+    public static void riddleOne(){
+
+        System.out.println(one.getDesc());
+
+    }
+    public static void riddleTwo(){
+
+
+
+    }
+    public static void riddleThree(){
+
+
+
+    }
+    public static void riddleFour(){
+
+
+
+    }
+    public static void riddleFive(){
+
+
+
+    }
+    public static void riddleSix(){
+
+
+
+    }
+
+
 
 }
