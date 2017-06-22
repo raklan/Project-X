@@ -29,6 +29,8 @@ Cyphers to use:
 Other Ideas
 	Obfuscation during the beginning of letter/number display, solely visual
 	Computer generate+solve its own riddles (Ceasar and transposition)
+	Experiment with fileIO, we can do stuff with text files
+	multiple stages?
 
 Jobs
 	Sean: 
