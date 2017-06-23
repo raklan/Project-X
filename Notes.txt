@@ -9,7 +9,7 @@ Riddles Ideas
 
 Cyphers to use:
 	-Ceasar
-	-Morse?
+	-Morse  (Used on Romeo)
 	-A=1, B=2, etc. & Variations
 		with key
 	Grid System - Inisde the README (Figure out a key)
@@ -42,4 +42,13 @@ Jobs
 		Grid System in the README
 	Jake:
 		Echo (E) x2
+
+
+
+5L U F K _ V
+4_ C N _ W X
+3E M S Z Y G
+2Q T B O R J
+1A I H D _ P
+ 1 2 3 4 5 6
 		

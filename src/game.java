@@ -25,6 +25,8 @@ public class game {
 
     public static void main(String[]args){
 
+        System.out.println(cipher('z'));
+
         int next = gen.nextInt(6);
 
         switch(next){
@@ -85,6 +87,14 @@ public class game {
     public static void riddleSix(){
 
 
+
+    }
+
+    public static char cipher(char first){
+
+        char old = first;
+        old+=5;
+        return old;
 
     }
 
