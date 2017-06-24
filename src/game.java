@@ -14,7 +14,7 @@ public class game {
 
     static riddle four = new riddle("dee", "d", 4, "");
 
-    static riddle five = new riddle("em", "m", 5, "");
+    static riddle five = new riddle("em", "m", 5, "The 27th Angel");
 
     static riddle six = new riddle("e2", "e", 6, "");
 
@@ -25,7 +25,6 @@ public class game {
 
     public static void main(String[]args){
 
-        System.out.println(cipher('z'));
 
         int next = gen.nextInt(6);
 
@@ -52,17 +51,14 @@ public class game {
 
         }
 
-        riddleOne();
+        riddleFive();
 
     }
 
     public static void riddleOne(){
 
         System.out.println(one.getDesc());
-        System.out.println();
-        System.out.println("Press Enter To Continue");
-        String ok = scan.nextLine();
-        System.out.println();
+        moveOn();
     }
     public static void riddleTwo(){
 
@@ -81,7 +77,9 @@ public class game {
     }
     public static void riddleFive(){
 
-
+        int rand = gen.nextInt(5)+1;
+        System.out.println(cipher(five.getDesc(), rand));
+        moveOn();
 
     }
     public static void riddleSix(){
@@ -90,14 +88,29 @@ public class game {
 
     }
 
-    public static char cipher(char first){
+    //To Use Cipher, call it with the message to be encrypted and the number of slots you want to move letters
+    //For example, System.out.println(cipher("Hello There", 4)); would print out the encrypted version of Hello There, with all characters shifted down 4 slots
 
-        char old = first;
-        old+=5;
-        return old;
+    public static String cipher(String m, int k){
+
+        int key = k;
+        String message = m;
+        String finished;
+
+        Cipher caesar = new Cipher(k,m);
+        finished = caesar.encrypt();
+
+        return finished;
 
     }
 
+    public static void moveOn(){
 
+        System.out.println();
+        System.out.println("Press Enter to Continue");
+        String scanner = scan.nextLine();
+        System.out.println(scanner);
+
+    }
 
 }
