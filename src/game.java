@@ -11,8 +11,6 @@ import java.util.*;
 public class Game {
     //create objects to use in the game
     static Riddle theRiddle = null;
-
-
     //static Riddle one = new Riddle("ar", "r", 1, ". .  . . .     _  _ _ _     . _ _ _  . . _  . _ . .  . .  .  _  _");
     //static Riddle two = new Riddle("e1", "e", 2, "Put the actual Riddle itself here");
     //static Riddle three = new Riddle("ay", "a", 3, "");
