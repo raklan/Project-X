@@ -15,7 +15,7 @@ Cyphers to use:
 	Grid System - Inisde the README (Figure out a key)
 	-Symbol to Letter?
 	Scavenger hunt
-		-For example, movie/game quotes are the answer
+		-For example, movie/Game quotes are the answer
 	-Transposition
 	Military? (Alpha Bravo Charlie etc)
 	Math?
@@ -23,7 +23,7 @@ Cyphers to use:
 	-Scramble
 	
 	
-	The answer to each riddle alludes to the military letters for R, E, A, D, M, and E
+	The answer to each Riddle alludes to the military letters for R, E, A, D, M, and E
 
 
 Other Ideas
