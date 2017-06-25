@@ -1,93 +1,72 @@
 import java.util.*;
+
 /**
- * Project X
- *
- * Created by FBI_Games
+ * Copyright 2017 FBI Games
+ * This code is under MIT licence, you can find the complete license in the
+ * LICENSE file in the root project directory
+ * <p>
+ * Created by Raklan on 6/22/2017.
  */
-public class game {
 
-    static riddle one = new riddle("ar","r", 1, ". .  . . .     _  _ _ _     . _ _ _  . . _  . _ . .  . .  .  _  _");
+public class Game {
+    //create objects to use in the game
+    static Riddle theRiddle = null;
 
-    static riddle two = new riddle("e1", "e", 2, "Put the actual Riddle itself here");
+    //static Riddle one = new Riddle("ar", "r", 1, ". .  . . .     _  _ _ _     . _ _ _  . . _  . _ . .  . .  .  _  _");
+    //static Riddle two = new Riddle("e1", "e", 2, "Put the actual Riddle itself here");
+    //static Riddle three = new Riddle("ay", "a", 3, "");
+    //static Riddle four = new Riddle("dee", "d", 4, "");
+    //static Riddle five = new Riddle("em", "m", 5, "");
+    //static Riddle six = new Riddle("e2", "e", 6, "");
 
-    static riddle three = new riddle("ay", "a", 3, "");
-
-    static riddle four = new riddle("dee", "d", 4, "");
-
-    static riddle five = new riddle("em", "m", 5, "");
-
-    static riddle six = new riddle("e2", "e", 6, "");
-
+    static Player thePlayer = new Player();
 
     static Random gen = new Random();
-
     static Scanner scan = new Scanner(System.in);
 
-    public static void main(String[]args){
+    public static void main(String[] args) {
+
+        System.out.println("Welcome to Project-X");
+        System.out.println("What is your name?");
+        thePlayer.setPlayerName(scan.next());
 
         int next = gen.nextInt(6);
 
-        switch(next){
+        switch (next) {
 
             case 0:
-                riddleOne();
+                theRiddle = new Riddle("ar", "r", 1, ". .  . . .     _  _ _ _     . _ _ _  . . _  . _ . .  . .  .  _  _");
                 break;
             case 1:
-                riddleTwo();
+                theRiddle = new Riddle("e1", "e", 2, "Put the actual Riddle itself here");
                 break;
             case 2:
-                riddleThree();
+                theRiddle = new Riddle("ay", "a", 3, "");
                 break;
             case 3:
-                riddleFour();
+                theRiddle = new Riddle("dee", "d", 4, "");
                 break;
             case 4:
-                riddleFive();
+                theRiddle = new Riddle("em", "m", 5, "");
                 break;
             case 5:
-                riddleSix();
+                theRiddle = new Riddle("e2", "e", 6, "");
                 break;
 
         }
 
-        riddleOne();
+        showRiddle();
 
     }
 
-    public static void riddleOne(){
+    public static void showRiddle() {
 
-        System.out.println(one.getDesc());
+        System.out.println(theRiddle.getDesc());
         System.out.println();
         System.out.println("Press Enter To Continue");
         String ok = scan.nextLine();
         System.out.println();
     }
-    public static void riddleTwo(){
-
-
-
-    }
-    public static void riddleThree(){
-
-
-
-    }
-    public static void riddleFour(){
-
-
-
-    }
-    public static void riddleFive(){
-
-
-
-    }
-    public static void riddleSix(){
-
-
-
-    }
-
 
 
 }
