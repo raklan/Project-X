@@ -12,12 +12,14 @@ public class Game {
     //create objects to use in the game
     static Riddle theRiddle = null;
 
+
     //static Riddle one = new Riddle("ar", "r", 1, ". .  . . .     _  _ _ _     . _ _ _  . . _  . _ . .  . .  .  _  _");
     //static Riddle two = new Riddle("e1", "e", 2, "Put the actual Riddle itself here");
     //static Riddle three = new Riddle("ay", "a", 3, "");
     //static Riddle four = new Riddle("dee", "d", 4, "");
     //static Riddle five = new Riddle("em", "m", 5, "");
     //static Riddle six = new Riddle("e2", "e", 6, "");
+
 
     static Player thePlayer = new Player();
 
@@ -29,6 +31,7 @@ public class Game {
         System.out.println("Welcome to Project-X");
         System.out.println("What is your name?");
         thePlayer.setPlayerName(scan.next());
+
 
         int next = gen.nextInt(6);
 
@@ -47,7 +50,7 @@ public class Game {
                 theRiddle = new Riddle("dee", "d", 4, "");
                 break;
             case 4:
-                theRiddle = new Riddle("em", "m", 5, "");
+                theRiddle = new Riddle("em", "m", 5, "The 27th Angel");
                 break;
             case 5:
                 theRiddle = new Riddle("e2", "e", 6, "");
@@ -57,16 +60,17 @@ public class Game {
 
         showRiddle();
 
+
     }
 
     public static void showRiddle() {
 
-        System.out.println(theRiddle.getDesc());
-        System.out.println();
-        System.out.println("Press Enter To Continue");
-        String ok = scan.nextLine();
-        System.out.println();
-    }
 
+        System.out.println();
+        System.out.println("Press Enter to Continue");
+        String scanner = scan.nextLine();
+        System.out.println(scanner);
+
+    }
 
 }
