@@ -26,9 +26,6 @@ public class Game {
 
     public static void main(String[] args) {
 
-        System.out.println("Welcome to Project-X");
-        System.out.println("What is your name?");
-        thePlayer.setPlayerName(scan.next());
 
 
         int next = gen.nextInt(6);
@@ -63,6 +60,29 @@ public class Game {
 
     public static void showRiddle() {
 
+        switch(theRiddle.getId()){
+
+            case 1:
+                System.out.println(theRiddle.getDesc());
+                break;
+            case 2:
+                //Echo 1 Goes Here
+                break;
+            case 3:
+                //Alpha Goes Here
+                break;
+            case 4:
+                //Delta Goes Here
+                break;
+            case 5:
+                Cipher casesar = new Cipher(gen.nextInt(5)+1, theRiddle.getDesc());
+                System.out.println(casesar.encrypt());
+                break;
+            case 6:
+                //Echo 2 Goes Here
+                break;
+
+        }
 
         System.out.println();
         System.out.println("Press Enter to Continue");
