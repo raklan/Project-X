@@ -34,6 +34,7 @@ public class ShiftWKeyCoder
             }catch(Exception e)
             {
                 System.out.println("Please input a number");
+                scan.nextLine();
             }
         }while(!done);
         if(shift>26||shift<-26)
