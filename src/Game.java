@@ -25,11 +25,8 @@ public class Game {
 
     public static void main(String[] args) {
 
-
         int next = gen.nextInt(6);
-
         switch (next) {
-
             case 0:
                 theRiddle = new Riddle("ar", "r", 1, ". .  . . .     _  _ _ _     . _ _ _  . . _  . _ . .  . .  .  _  _");
                 break;
@@ -37,7 +34,7 @@ public class Game {
                 theRiddle = new Riddle("e1", "e", 2, "Put the actual Riddle itself here");
                 break;
             case 2:
-                theRiddle = new Riddle("ay", "a", 3, "");
+                theRiddle = new Riddle("ay", "alpha", 3, "Sundry nerdists and geeks");
                 break;
             case 3:
                 theRiddle = new Riddle("dee", "delta", 4, "");
@@ -48,12 +45,13 @@ public class Game {
             case 5:
                 theRiddle = new Riddle("e2", "e", 6, "");
                 break;
-     
+
         }
 
         showRiddle();
 
     }
+
     public static void showRiddle() {
         switch(theRiddle.getId()){
             case 1:
@@ -63,7 +61,7 @@ public class Game {
                 //Echo 1 Goes Here
                 break;
             case 3:
-                //Alpha Goes Here
+                System.out.println(theRiddle.getDesc());
                 break;
             case 4:
                 printDelta();
@@ -75,7 +73,7 @@ public class Game {
             case 6:
                 //Echo 2 Goes Here
                 break;
-     
+
         }
 
         System.out.println();
