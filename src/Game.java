@@ -28,22 +28,22 @@ public class Game {
         int next = gen.nextInt(6);
         switch (next) {
             case 0:
-                theRiddle = new Riddle("ar", "r", 1, ". .  . . .     _  _ _ _     . _ _ _  . . _  . _ . .  . .  .  _  _");
+                theRiddle = new Riddle("r", "romeo", 1, ". .  . . .     _  _ _ _     . _ _ _  . . _  . _ . .  . .  .  _  _");
                 break;
             case 1:
-                theRiddle = new Riddle("e1", "e", 2, "Put the actual Riddle itself here");
+                theRiddle = new Riddle("e1", "echo", 2, "Put the actual Riddle itself here");
                 break;
             case 2:
-                theRiddle = new Riddle("ay", "alpha", 3, "Sundry nerdists and geeks");
+                theRiddle = new Riddle("a", "alpha", 3, "Sundry nerdists and geeks");
                 break;
             case 3:
-                theRiddle = new Riddle("dee", "delta", 4, "");
+                theRiddle = new Riddle("d", "delta", 4, "");
                 break;
             case 4:
-                theRiddle = new Riddle("em", "m", 5, "The 27th Angel");
+                theRiddle = new Riddle("m", "mike", 5, "The 27th Angel");
                 break;
             case 5:
-                theRiddle = new Riddle("e2", "e", 6, "");
+                theRiddle = new Riddle("e2", "echo", 6, "");
                 break;
 
         }
