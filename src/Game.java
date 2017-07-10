@@ -19,11 +19,15 @@ public class Game {
     //static Riddle five = new Riddle("em", "m", 5, "");
     //static Riddle six = new Riddle("e2", "e", 6, "");
 
-    static Player thePlayer = new Player();
     static Random gen = new Random();
     static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
+
+        chooseRiddle();
+    }
+
+    public static void chooseRiddle(){
 
         int next = gen.nextInt(6);
         switch (next) {
@@ -47,9 +51,8 @@ public class Game {
                 break;
 
         }
-
-        showRiddle();
-
+         showRiddle();
+        chooseRiddle();
     }
 
     public static void showRiddle() {
@@ -81,16 +84,35 @@ public class Game {
         String scanner = scan.nextLine();
         if(scanner.equalsIgnoreCase(theRiddle.getAnswer()))
         {
-            System.out.println("yay a grid piece probably goes here");
+            if(theRiddle.getId()==1){
+                System.out.println("5   L U F K _ V");
+            }
+            else if(theRiddle.getId()==2){
+                System.out.println("4   _ C N _ W X");
+            }
+            else if(theRiddle.getId()==3){
+                System.out.println("3    E M S Z Y G");
+            }
+            else if(theRiddle.getId()==4){
+                System.out.println("2   Q T B O R J");
+            }
+            else if(theRiddle.getId()==5){
+                System.out.println("1   A I H D _ P");
+            }
+            else if(theRiddle.getId()==6){
+                System.out.println("0   1 2 3 4 5 6");
+            }
         }
+        System.out.println();
     }
+
 
     private static void printDelta()//reads delta from file and prints it out
     {
         BufferedReader reader;
         try
         {
-            reader = new BufferedReader(new FileReader("Delta.txt"));
+            reader = new BufferedReader(new FileReader("./src/Delta.txt"));
             String line;
             do
             {
