@@ -35,7 +35,7 @@ public class Game {
                 theRiddle = new Riddle("r", "romeo", 1, ". .  . . .     _  _ _ _     . _ _ _  . . _  . _ . .  . .  .  _  _");
                 break;
             case 1:
-                theRiddle = new Riddle("e1", "echo", 2, "Put the actual Riddle itself here");
+                theRiddle = new Riddle("e1", "echo", 2, "ECHO ECHO ECHO ECHO ECHO ECHO ECHO ECHO ECHO ECHO");
                 break;
             case 2:
                 theRiddle = new Riddle("a", "alpha", 3, "Sundry nerdists and geeks");
@@ -61,7 +61,16 @@ public class Game {
                 System.out.println(theRiddle.getDesc());
                 break;
             case 2:
-                //Echo 1 Goes Here
+                String e = "";
+                do{
+                    e = scan.nextLine();
+                    if(e.equalsIgnoreCase("")){
+
+                        System.out.println("...");
+                    }
+                    else
+                        System.out.println(e);
+                }while(!e.equalsIgnoreCase("stop")&&!e.equalsIgnoreCase("quit")&&!e.equalsIgnoreCase("no more")&&!e.equalsIgnoreCase("exit"));
                 break;
             case 3:
                 System.out.println(theRiddle.getDesc());
@@ -85,22 +94,22 @@ public class Game {
         if(scanner.equalsIgnoreCase(theRiddle.getAnswer()))
         {
             if(theRiddle.getId()==1){
-                System.out.println("5   L U F K _ V");
+                System.out.println("6   D S Y I P");
             }
             else if(theRiddle.getId()==2){
-                System.out.println("4   _ C N _ W X");
+                System.out.println("5   K O E _ X");
             }
             else if(theRiddle.getId()==3){
-                System.out.println("3    E M S Z Y G");
+                System.out.println("4   N J Q W C");
             }
             else if(theRiddle.getId()==4){
-                System.out.println("2   Q T B O R J");
+                System.out.println("3   _ G Z _ T");
             }
             else if(theRiddle.getId()==5){
-                System.out.println("1   A I H D _ P");
+                System.out.println("2   A L V H _");
             }
             else if(theRiddle.getId()==6){
-                System.out.println("0   1 2 3 4 5 6");
+                System.out.println("1   F R B U M");
             }
         }
         System.out.println();
