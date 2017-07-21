@@ -24,6 +24,12 @@ public class Game {
 
     public static void main(String[] args) {
 
+        String cont = "";
+
+        System.out.println("Project X");
+        System.out.println("Press Enter to Begin");
+        cont = scan.nextLine();
+        System.out.println(cont);
         chooseRiddle();
     }
 
@@ -47,7 +53,7 @@ public class Game {
                 theRiddle = new Riddle("m", "mike", 5, "The 27th Angel");
                 break;
             case 5:
-                theRiddle = new Riddle("e2", "echo", 6, "");
+                theRiddle = new Riddle("e2", "echo", 6, "You really think you can solve all of this? Quite the narcissist, aren't you? That's ok, I love you anyways.");
                 break;
 
         }
@@ -83,7 +89,7 @@ public class Game {
                 System.out.println(casesar.encrypt());
                 break;
             case 6:
-                //Echo 2 Goes Here
+                System.out.println(theRiddle.getDesc());
                 break;
 
         }
