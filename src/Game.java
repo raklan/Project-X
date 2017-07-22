@@ -127,7 +127,7 @@ public class Game {
         BufferedReader reader;
         try
         {
-            reader = new BufferedReader(new FileReader("./src/Delta.txt"));
+            reader = new BufferedReader(new FileReader("./Delta.txt"));
             String line;
             do
             {
