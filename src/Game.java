@@ -44,7 +44,7 @@ public class Game {
                 theRiddle = new Riddle("e1", "echo", 2, "ECHO ECHO ECHO ECHO ECHO ECHO ECHO ECHO ECHO ECHO");
                 break;
             case 2:
-                theRiddle = new Riddle("a", "alpha", 3, "Sundry nerdists and geeks");
+                theRiddle = new Riddle("a", "alpha", 3, "Who or What is the Twin of Helium-4?");
                 break;
             case 3:
                 theRiddle = new Riddle("d", "delta", 4, "");
@@ -127,7 +127,7 @@ public class Game {
         BufferedReader reader;
         try
         {
-            reader = new BufferedReader(new FileReader("./Delta.txt"));
+            reader = new BufferedReader(new FileReader("src/Delta.txt"));
             String line;
             do
             {
